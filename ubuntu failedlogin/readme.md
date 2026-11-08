@@ -48,11 +48,7 @@ echo 'session    optional   pam_exec.so stdout quiet_log /usr/local/sbin/login-f
 
 
 
-结论：Ubuntu 24.04 的 libpam-modules 从发布起就不含 pam_lastlog.so（noble 初始版和 updates 版都没有），/etc/pam.d/* 里那两行是包之间没清理同步的"幽灵配置"，因标了 optional 而静默失效——机器本身没坏，不用再找这个模块。
-
-落地：用 pam_exec + /usr/local/sbin/login-failed-report 复刻 showfailed，挂到 sshd/login 的 session 段。
-
-唯一还没确认的：/etc/pam.d/sshd 第 3 行位置异常，说明该文件可能被覆盖过。下次若 SSH 认证出现任何怪象，第一件事就是 sudo cat -n /etc/pam.d/sshd，确认 @include common-auth/account/session/password 四行齐全。
-
-另外我自己踩的两个坑也记一下，避免你被我的错误推断带偏：pam_usertype.so 不是版本标志（Ubuntu 自有模块，1.5.3 就有）；pam_lastlog 也不是"updates 移除"的，是 24.04 起就没带。
+结论：  
+Ubuntu 24.04 的 libpam-modules 从发布起就不含 pam_lastlog.so（noble 初始版和 updates 版都没有），/etc/pam.d/* 里那两行是包之间没清理同步的"幽灵配置"，因标了 optional 而静默失效——机器本身没坏，不用再找这个模块。  
+落地：用 pam_exec + /usr/local/sbin/login-failed-report 复刻 showfailed，挂到 sshd/login 的 session 段。  
 
