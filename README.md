@@ -5,6 +5,12 @@ some scripts to fix outdates panel version issue
 aapanel-nginx-ssl:  
 `used to fix aapanel 7.0.25 nginx SSL X509 certificate import error`  
 
+ubuntu failedlogin:  
+`add a feature to allow ubuntu display failed logins when you ssh to the server`  
+
+NS_ERROR_NET_PARTIAL_TRANSFER:
+`settings to fix the website load issue when you have a website proxied by cloudflare`  
+
 注意事项:  
 * 对于较低内存机器，一定要配置swap
 * 对于硬盘IO较低并且内存低的机器 (io<1G/s && mem<1G)，尽量不要使用 waf ， task manager 和 statistics 以外的专业版插件，特别是 System hardening, Anti-intrusion。这两个插件会对硬盘持续写入，造成面板持续卡顿。
