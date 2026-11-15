@@ -1,45 +1,48 @@
-# Having NS_ERROR_NET_PARTIAL_TRANSFER or ERR_HTTP2_PROTOCOL_ERROR
+# Having NS_ERROR_NET_PARTIAL_TRANSFER or ERR_HTTP2_PROTOCOL_ERROR  
 
-**What is the name of the domain?**
+**What is the name of the domain?**  
 
-https://cdcs.makedreamprofits.com
+https://cdcs.makedreamprofits.com  
 
-**What is the error number?**
+**What is the error number?**  
 
-NS_ERROR_NET_PARTIAL_TRANSFER
+NS_ERROR_NET_PARTIAL_TRANSFER  
 
-**What is the error message?**
+**What is the error message?**  
 
-NS_ERROR_NET_PARTIAL_TRANSFER
+NS_ERROR_NET_PARTIAL_TRANSFER  
 
-**What is the issue you’re encountering**
+**What is the issue you’re encountering**  
 
-Cant fully load the file
+Cant fully load the file  
 
-**What steps have you taken to resolve the issue?**
+**What steps have you taken to resolve the issue?**  
 
-Turned off compression, disabled tsl 1.3
+Turned off compression, disabled tsl 1.3  
 
-**What are the steps to reproduce the issue?**
+**What are the steps to reproduce the issue?**  
 
-Execute https://cdcs.makedreamprofits.com/jmdp.js
-Or open it in browser
-It doesnt load fully and breaks
-Same file without CDN works fine https://cdcs.makedreamprofits.ru/jmdp.js
+Execute https://cdcs.makedreamprofits.com/jmdp.js  
+Or open it in browser  
+It doesnt load fully and breaks  
+Same file without CDN works fine https://cdcs.makedreamprofits.ru/jmdp.js  
 
 
-# Get started
+# Get started  
 
-Cloudflare provides you with rules templates for common use cases.
+Cloudflare provides you with rules templates for common use cases.  
 
-1. In the Cloudflare dashboard, go to the **Rules Overview** page.
-[Go to Overview](https://dash.cloudflare.com/?to=/:account/:zone/rules/overview)
-2. Select **Templates**, and then select one of the available templates.
+1. In the Cloudflare dashboard, go to the **Rules Overview** page.  
+[Go to Overview](https://dash.cloudflare.com/?to=/:account/:zone/rules/overview)  
+2. Select **Templates**, and then select one of the available templates.  
 
-You can also refer to the [Examples gallery](https://developers.cloudflare.com/rules/examples/) in the developer docs.
+You can also refer to the [Examples gallery](https://developers.cloudflare.com/rules/examples/) in the developer docs.  
 
-Alternatively, follow the instructions in the following pages to get started:
+Alternatively, follow the instructions in the following pages to get started:  
 
-- [Create a compression rule in the dashboard](https://developers.cloudflare.com/rules/compression-rules/create-dashboard/)
-- [Create a compression rule via Cloudflare API](https://developers.cloudflare.com/rules/compression-rules/create-api/)
+- [Create a compression rule in the dashboard](https://developers.cloudflare.com/rules/compression-rules/create-dashboard/)  
+- [Create a compression rule via Cloudflare API](https://developers.cloudflare.com/rules/compression-rules/create-api/)  
 
+Reference:  
+https://community.cloudflare.com/t/having-ns-error-net-partial-transfer-or-err-http2-protocol-error/884833  
+https://developers.cloudflare.com/rules/compression-rules/  
