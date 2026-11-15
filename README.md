@@ -8,7 +8,7 @@ aapanel-nginx-ssl:
 ubuntu failedlogin:  
 `add a feature to allow ubuntu display failed logins when you ssh to the server`  
 
-NS_ERROR_NET_PARTIAL_TRANSFER:
+NS_ERROR_NET_PARTIAL_TRANSFER:  
 `settings to fix the website load issue when you have a website proxied by cloudflare`  
 
 注意事项:  
