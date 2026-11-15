@@ -6,7 +6,7 @@ aapanel-nginx-ssl:
 `used to fix aapanel 7.0.25 nginx SSL X509 certificate import error`  
 
 ubuntu failedlogin:  
-`add a feature to allow ubuntu display failed logins when you ssh to the server`  
+`add a feature to allow ubuntu 24.04 display failed logins when you ssh to the server`  
 
 NS_ERROR_NET_PARTIAL_TRANSFER:  
 `settings to fix the website load issue when you have a website proxied by cloudflare`  
